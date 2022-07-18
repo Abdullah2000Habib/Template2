@@ -18,6 +18,7 @@ body {
     font-family: 'Cairo', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    background-color: black;
 }
 
 ul {
@@ -54,4 +55,47 @@ ul {
     }
 }
 
+
+
 /* End  Globle Rules */
+/* Start Header */
+header {}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+
+}
+
+header .container::after {
+
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: #a2a2a2;
+    left: 15px;
+    bottom: 0;
+
+}
+
+header .logo img {
+
+    height: 40px;
+
+}
+
+header nav {
+    flex: 1;
+    /* nav take all remaining space from this parent*/
+}
+
+
+
+
+
+
+/* End Header */
